@@ -1,0 +1,171 @@
+%
+% Simple asymmetric two-column CV 
+% Author: Sofia JIJON
+%
+
+\documentclass[a4paper,10pt]{article}
+\usepackage[vmargin=1.5cm, hmargin=1.5cm]{geometry}
+%\usepackage[unicode, pdftex]{hyperref}
+\input{MySetup}
+%-------------------------------------------------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{empty}
+
+%-------------------------------------------------------------------------------------------------------
+% Left column
+%-------------------------------------------------------------------------------------------------------
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.3\textwidth} % Adapt width to your convenience
+%----------------------------------------------------
+% Please add a photo in 1x1 format
+%
+\begin{center}
+%\begin{tikzpicture}
+%	\clip (0,0) circle (2cm) node %{\includegraphics[width=4cm]{Photo}};
+%\end{tikzpicture}
+
+\MySkip 	% See MySetup.tex file
+
+%----------------------------------------------------
+{\LARGE \bfseries Busurmankulov Altay}
+
+\MySkip 	% See MySetup.tex file
+
+Born: 22.02.2002\\
+Moscow -- Russian Federation\\
+Currently living in Moscow\\
+
+\MySkip 	% See MySetup.tex file
+
+\textcolor{ColorTwo}{\faEnvelopeO} 
+\myhref{mailto:busuraltay@gmail.com}{busuraltay@gmail.com} \\
+
+%\textcolor{ColorTwo}{\faChain} 
+%\myhref{https://your-web-page.io}{https://your-web-page.io}
+\end{center}
+
+\vfill
+
+%----------------------------------------------------
+\section*{Scientific interests}
+\raggedright
+\textcolor{ColorOne}{$\circ$} Seki game\\
+\textcolor{ColorOne}{$\circ$} programming\\
+\textcolor{ColorOne}{$\circ$} Optimal strategy\\
+
+\vfill
+
+%----------------------------------------------------
+\section*{Education}
+	\begin{description}
+	\raggedright
+%	\item [\normalfont \textcolor{ColorOne}{2021.}] \textbf{PhD in
+%Social Sciences}\\
+%	Another University\\
+%	City -- COUNTRY
+
+	\item [\normalfont \textcolor{ColorOne}{2020-2024.}] \textbf{Bachelor in Computer Science}\\
+	High School of Economics\\
+	Moscow -- Russia
+
+	\item [\normalfont \textcolor{ColorOne}{2020.}] \textbf{School Unified State Exam in mathematics}\\ 
+	99/100 grade
+\end{description}
+
+\vfill
+\end{minipage}
+\end{adjustbox}
+%
+%
+%-------------------------------------------------------------------------------------------------------
+% Vertical rule
+%-------------------------------------------------------------------------------------------------------
+%
+\hfill
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.05\textwidth} % Adapt width to your convenience
+\MyVerticalRule  % See MySetup.tex file
+\end{minipage}
+\end{adjustbox}
+\hfill
+%
+%-------------------------------------------------------------------------------------------------------
+% Right column
+%-------------------------------------------------------------------------------------------------------
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.6\textwidth} % Adapt width to your convienience
+\section*{Current situation}
+\begin{description}
+\raggedright
+\item[\normalfont \textcolor{ColorOne}{Sep. 2020 -- Dec. 2021.}] \textbf{Study at bachelor's degree}\\ \medskip
+
+
+\end{description}
+
+%----------------------------------------------------
+\section*{Experience}
+\begin{description}
+\raggedright
+\item[\normalfont \textcolor{ColorOne}{Jun. 2021 -- Aug. 2021.}] 
+	\textbf{My university practise}\\ \medskip
+	
+	Seki game\\
+	
+	During this summer practice, I worked with algorithms for the Seki game, such as matrix canonization, alpha-beta pruning and other small things.\\
+	by-product of activity: \textcolor{ColorTwo}{\href{https://hsepractica.herokuapp.com/canonize/}{Canonize matrix site}}
+\item[\normalfont \textcolor{ColorOne}{Jun. 2019 -- Sep. 2019.}] 
+	\textbf{My school project}\\ \medskip
+	
+	Generator of equations\\
+	
+	I have made site that generate different types of school equations that I learned in grade 10.\\
+	\textcolor{ColorTwo}{\href{https://afternoon-forest-10311.herokuapp.com/parametr/}{Link to generator}} (doesn't load immediately)
+\end{description}
+
+%----------------------------------------------------
+% \section*{Publications}
+% \begin{description}
+% 	\raggedright
+% 	\item \underline{Name, Y.}, Second Author, N., Third Author, N. et al. \textbf{(2019)} A great title {\it Journal}. doi:~\myhref{https://doi.org/xx.yyy/zzz.12345}{xx.yyy/zzz.12345}
+
+% 	\item First Author, T., \underline{Name, Y.}, Third Author, N. et al. \textbf{(2015)} A long title for a great study{\it Journal}. doi:~\myhref{https://doi.org/xx.yyy/zzz.54321}{xx.yyy/zzz.54321}
+	
+% \end{description}
+%----------------------------------------------------
+% \section*{Oral communications}
+% \begin{description}
+% 	\raggedright
+% 	\item \underline{Name, Y.}, Second Author, N., Third Author, N. et al. \textbf{(2019)} The title of a talk you did. {\it Conference}, November 16, 2006, City, Country.
+% \end{description}
+%----------------------------------------------------
+% \section*{Another section}
+% %\begin{description}
+% 	 I was a prize-winner of the International Olympiad\\ in Experimental Physics at school\\
+	 
+% %\end{description}
+
+\MySkip
+%----------------------------------------------------
+\begin{multicols}{2}
+\section*{Skills}
+\begin{tabular}{ll}
+	Python  			& \SkillBull{$\bullet \bullet \circ \, \circ$}\\
+	C++ 		& \SkillBull{$\bullet \bullet \circ \, \circ$}\\
+    Django 		& \SkillBull{$\bullet \circ \circ \, \circ$}\\
+\end{tabular}
+
+\vfill\null \columnbreak  % Break column for new section
+
+\section*{Languages}
+\begin{tabular}{ll}
+	English 		& \SkillBull{$\bullet \bullet \circ \, \circ$}\\
+% 	French 		& \SkillBull{$\bullet \circ \circ \, \circ$}\\
+\end{tabular}
+\end{multicols}
+%----------------------------------------------------
+\LastUpdate
+%----------------------------------------------------
+\end{minipage}
+\end{adjustbox}
+\end{document}
