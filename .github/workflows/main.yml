@@ -1,0 +1,9 @@
+name: main
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd ./Simple-CV/
+      - run: ll Simple-CV.pdf
