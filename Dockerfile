@@ -15,6 +15,9 @@ texlive-science \
 cm-super
 
 COPY Simple-CV/ Simple-CV/
-CMD cd Simple-CV; bash makeCV.sh
+RUN cd Simple-CV
+RUN ls
+RUN chmod +x makeCV.sh
+CMD bash makeCV.sh
 
 
