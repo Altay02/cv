@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: cd ./Simple-CV/
-      - run: ll Simple-CV.pdf
+      - run: ls -lah Simple-CV.pdf
