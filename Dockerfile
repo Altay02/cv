@@ -14,11 +14,10 @@ texlive-lang-cyrillic \
 texlive-science \
 cm-super
 
-COPY Simple-CV/ Simple-CV/
-RUN cd Simple-CV
+COPY Simple-CV/ /
 RUN ls
-RUN chmod +x Simple-CV/makeCV.sh
-RUN bash Simple-CV/makeCV.sh
+RUN chmod +x makeCV.sh
+RUN bash makeCV.sh
 CMD [ "bash" ]
 
 
