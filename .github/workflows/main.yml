@@ -16,10 +16,10 @@ jobs:
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
       - run: ls -lah
-      - run: cd Simple-CV/Simple-CV
+      - run: cd Simple-CV
       - run: ls -lah
-      - run: chmod +x makeCV.sh
-      - run: bash makeCV.sh
+      - run: chmod +x Simple-CV/makeCV.sh
+      - run: bash Simple-CV/makeCV.sh
       - name: CheckoutToGh-pages
         uses: actions/checkout@v2
         with:
