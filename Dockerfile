@@ -12,7 +12,8 @@ texlive-base \
 texlive-pictures \
 texlive-lang-cyrillic \
 texlive-science \
-cm-super
+cm-super \
+git
 
 COPY Simple-CV/ /
 RUN ls
