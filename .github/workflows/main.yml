@@ -14,11 +14,10 @@ jobs:
       # you must check out the repository
       - name: Checkout1
         uses: actions/checkout@v2 
-      - name: docker
-        uses: docker
-        with:
-          path: Dockerfile
-      - name: Hello world action step
+        runs:
+          using: 'docker'
+          image: 'Dockerfile'
+#      - name: Hello world action step
 #        uses: ./ # Uses an action in the root directory
       - run: ls -lah
       - run: cd Simple-CV
