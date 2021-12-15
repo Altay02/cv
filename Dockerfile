@@ -18,7 +18,7 @@ COPY Simple-CV/ Simple-CV/
 RUN cd Simple-CV
 RUN ls
 RUN chmod +x Simple-CV/makeCV.sh
-RUN bash makeCV.sh
+RUN bash Simple-CV/makeCV.sh
 CMD [ "bash" ]
 
 
