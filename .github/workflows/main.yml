@@ -11,9 +11,17 @@ jobs:
     steps:
       # To use this repository's private action,
       # you must check out the repository
-      - name: Checkout
+      - name: Checkout1
         uses: actions/checkout@v2
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
+        uses: ls
+        uses: chmod +x makeCV.sh
+        uses: bash makeCV.sh
+      - name: CheckoutToGh-pages
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+        uses: bash copy-pdf.sh
 
 
