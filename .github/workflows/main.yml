@@ -13,12 +13,13 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout1
-        uses: actions/checkout@v2       
+        uses: actions/checkout@v2 
+      - name: docker
         uses: docker
         with:
           path: Dockerfile
       - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
+#        uses: ./ # Uses an action in the root directory
       - run: ls -lah
       - run: cd Simple-CV
       - run: ls -lah
