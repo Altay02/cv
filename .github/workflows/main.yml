@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+        uses: docker
+        with:
+          path: Dockerfile
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout1
