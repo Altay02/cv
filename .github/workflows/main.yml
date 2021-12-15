@@ -15,8 +15,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
-      - run: ls
-      - run: cd Simple-CV
+      - run: ls -lah
+      - run: cd Simple-CV/Simple-CV
       - run: ls -lah
       - run: chmod +x makeCV.sh
       - run: bash makeCV.sh
