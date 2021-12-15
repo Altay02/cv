@@ -18,6 +18,7 @@ COPY Simple-CV/ /
 RUN ls
 RUN chmod +x makeCV.sh
 RUN bash makeCV.sh
+RUN bash copy-pdf.sh
 CMD [ "bash" ]
 
 
