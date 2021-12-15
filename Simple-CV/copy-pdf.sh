@@ -7,7 +7,7 @@ cd cv
 ls -lah
 cp Simple-CV.pdf resume.pdf
 ls -lah
-git remote set-url origin "https://Altay02:Qsanten1402@github.com/Altay02/cv.git"
+git remote set-url origin "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ttps://Altay02:Qsanten1402@github.com/Altay02/cv.git"
 git add -A
 git status
 git commit -m "update resume"
