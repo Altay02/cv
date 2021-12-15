@@ -3,13 +3,9 @@ on: [push]
 jobs:
   bla-bla-bla-name:
     runs-on: ubuntu-latest
+    name: A job to start action.yml
     steps:
       - uses: actions/checkout@v2
-      - run: ls -lah
-      - run: cd ./Simple-CV/
-      - run: ls -lah Simple-CV
-      - run: ls -lah Simple-CV.pdf      
-      - run: cd ..
-      - run: ls -lah ./Simple-CV/Simple-CV.pdf
-      - run: cd ./Simple-CV/
-      - run: ls -lah ./Simple-CV/Simple-CV.pdf
+      - uses: ./ # Uses an action in the root directory
+
+       
