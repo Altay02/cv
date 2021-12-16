@@ -5,9 +5,9 @@ git config --global user.name "Altay02"
 #git remote -v
 #git remote set-url origin mySSH_url
 #git clone ssh://git@github.com:Altay02/cv.git
-ls -lah
-cd cv
-ls -lah
+#ls -lah
+#cd cv
+#ls -lah
 cp Simple-CV.pdf resume.pdf
 ls -lah
 cd ..
