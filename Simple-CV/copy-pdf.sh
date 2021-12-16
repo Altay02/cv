@@ -10,6 +10,10 @@ cd cv
 ls -lah
 cp Simple-CV.pdf resume.pdf
 ls -lah
+cd ..
+ls -lah
+cd ..
+ls -lah
 #git add -A
 #git status
 #git commit -m "update resume"
