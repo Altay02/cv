@@ -18,8 +18,10 @@ git
 COPY Simple-CV/ /
 RUN ls
 RUN chmod +x makeCV.sh
+RUN ls -lah
 RUN bash makeCV.sh
 RUN echo makecvwas
+RUN ls -lah
 RUN bash copy-pdf.sh
 RUN echo copy-pdfwas
 CMD [ "bash" ]
