@@ -16,4 +16,6 @@ jobs:
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         id: hello
-
+      - run: git add resume.pdf
+      - run: git commit -m "resume.pdf"
+      - run: git push origin gh-pages
