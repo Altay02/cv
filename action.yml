@@ -1,6 +1,6 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'action.yml file'
+description: 'start action.yml'
 runs:
   using: 'docker'
   image: 'Dockerfile'
