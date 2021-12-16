@@ -9,26 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-
       # To use this repository's private action,
       # you must check out the repository
-      - name: Checkout1
-        uses: actions/checkout@v2 
-        runs:
-          using: 'docker'
-          image: 'Dockerfile'
-#      - name: Hello world action step
-#        uses: ./ # Uses an action in the root directory
-      - run: ls -lah
-      - run: cd Simple-CV
-      - run: ls -lah
-      - run: chmod +x Simple-CV/makeCV.sh
-      - run: bash Simple-CV/makeCV.sh
-      - name: CheckoutToGh-pages
+      - name: Checkout
         uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          path: gh-pages
-      - run: bash copy-pdf.sh
-
+      - name: Hello world action step
+        uses: ./ # Uses an action in the root directory
+        id: hello
 
