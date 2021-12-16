@@ -1,6 +1,8 @@
+
 ls -lah
 git config --global user.email "busurmankulov.altay@mail.ru"
 git config --global user.name "Altay02"
+git clone https://github.com/Altay02/cv.git
 ls -lah
 cd cv
 ls -lah
@@ -9,4 +11,4 @@ ls -lah
 git add -A
 git status
 git commit -m "update resume"
-git push origin gh-pages
+git push origin main:gh-pages
