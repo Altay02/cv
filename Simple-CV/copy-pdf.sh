@@ -2,7 +2,7 @@
 ls -lah
 git config --global user.email "busurmankulov.altay@mail.ru"
 git config --global user.name "Altay02"
-git clone https://github.com/Altay02/cv.git
+git clone ssh://git@github.com:Altay02/cv.git
 ls -lah
 cd cv
 ls -lah
