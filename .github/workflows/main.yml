@@ -5,7 +5,7 @@ on:
       main
 
 jobs:
-  hello_world_job:
+  update_resume:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
@@ -13,13 +13,13 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
+      - name: start action.yml
         uses: ./ # Uses an action in the root directory
         id: hello
       - run: ls -lah
-      - run: git add *.pdf
+      - run: git add resume.pdf
       - run: git status
-      - run: git add */*.pdf
-      - run: git status
+      #- run: git add */*.pdf
+      #- run: git status
       - run: git commit -m "resume.pdf"
       - run: git push origin gh-pages
