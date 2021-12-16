@@ -7,7 +7,7 @@ on:
 jobs:
   update_resume:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: main.yml work
     steps:
       # To use this repository's private action,
       # you must check out the repository
